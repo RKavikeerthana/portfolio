@@ -1,3 +1,6 @@
+# Save the HTML content as a downloadable .html file
+
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,3 +109,11 @@
   </div>
 </body>
 </html>
+"""
+
+# Save the HTML content to a file
+file_path = "/mnt/data/Kavi_Keerthana_Resume.html"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(html_content)
+
+file_path
